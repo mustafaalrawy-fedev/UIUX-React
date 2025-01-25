@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  --main-color-1: #e31b1f;
+  --main-color-2: #9b8e8c;
+  --main-color-3: #d94386;
+  --main-color-4: #7f8cd4;
+  --main-color-5: #1d3951;
+  --subTitle-color: #999;
+  --sections-bg-color: #eee;
+  --footer-bg-color: #333;
+  --copyright-bg-color: #222;
+}
+body {
+  @apply overflow-x-hidden;
+}
+.container {
+  @apply px-5 md:px-12 lg:px-32 max-w-full;
+}
+.btn {
+  @apply w-fit px-10 py-3 text-white font-bold rounded-md;
+}
+.custom-grid {
+  @apply grid w-full h-full;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
